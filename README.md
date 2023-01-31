@@ -1,3 +1,3 @@
-# junkyard
+# web
 
-me doing whatever i want, just like the founding fathers intended
+did some html/css/js, theyre p cool ig
