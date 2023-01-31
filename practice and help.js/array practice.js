@@ -1,0 +1,1 @@
+//arrays are a pain so i did some array stuff, empty rn cuz im lazy

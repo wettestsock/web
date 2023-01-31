@@ -1,0 +1,96 @@
+input::-webkit-outer-spin-button,  /*top lines for disabling scroll buttons on number inputs*/
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+
+
+/*alt + shift + up/down quicky copies a line down/up*/
+
+
+
+.join-btn { /*the BUTTON!!!! this is a css selector, tells which elements are targeted. this case it's all the elements*/
+    vertical-align: top; /*by default all text is aligned together, this aligns it to the top*/
+    background-color: rgb(45, 21, 21); /*styles are straightforward, this uses the rgb property but can use basic color names*/
+    color: rgb(255, 155, 155);
+    border: none; /*if dont know property, use GOOGLE!!!!!*/
+    height: 300px;
+    width: 300px;
+    text-align: left; /* allignment*/
+    border-radius: 30px; /*the curvy corners*/
+    font-size: 30px;
+    transition: all 2s; /*shift alt up / down arrows can copy the entire line*/
+    padding-left: 40pt;
+    padding-top: 40pt; /*the padding at top, left, right, bottom aka where the text goes from the border*/
+    /*NOTE: when adding padding, 1 pixel gets added to the button size*/
+    margin-top: 10pt;
+    transition: margin-top 6s, box-shadow 3s;
+}
+.join-btn:hover {      
+    cursor: pointer; /*the cursor to pointer*/
+    /*rgba is rgb with an a value, aka the transparency*/
+    box-shadow: 30px 16px 5px rgba(35, 6, 40, 0.5); /*drop shadow. x, y, spread, and color (default: black)*/
+}
+
+
+.subscribe-button { /*this is a class name instead of button, have to put dot at the beginning*/
+    vertical-align: top;
+    background-color: black;
+    background-blend-mode: darken; /*the blend mode!!!!!*/
+    color: white;
+    border-color: red;
+    border-width: 10px;
+    border-style: dotted;
+    width: 200px;       /*NOTE : IF THESE VALUES ARE UNSPECIFIED IN OTHER STATES, like hover etc, then they remain*/
+    height: 100px;
+    margin-right: 88px; /*the margins of the button*/
+    margin-left: 88px;
+    /*gives a smooth transition, recommended only put in the base properties like this only*/
+    /*separate by commas*/
+    transition: color 6s, background-color 6s, font-size 6s, width 6s, height 3s;
+
+}
+.subscribe-button:hover { /*the button when it's hovered over*/
+    vertical-align: top;
+    background-color: white;
+    background-blend-mode: darken; /*the blend mode!!!!!*/
+    color: black;
+    cursor: pointer; /*the cursor to pointer*/
+    border-color: red;
+    border-width: 10px;
+    width: 400px;
+    height: 200px;
+    border-style: dotted;
+    font-weight:bold;
+    font-size: 50px;
+}
+.subscribe-button:active { /*the button when it's CLICKED ON*/
+    background-color: blue;
+}
+.pure-evil {
+    opacity: 0.8; /*the opacity of the object*/
+    color: red; /*can change properties of color the same way, just put class*/
+}
+
+
+
+
+/*TEXT EXERCISES*/
+
+.video-title {
+    font-family: Arial; /*times new roman by default*/
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60pt; /*spacing between lines*/
+}
+
+
+
+@media screen and (max-width:500px) { /*if statement, set condition that changes properties if width or height or something is certain parameter*/
+    .join-btn {
+        margin-top: 90px;
+    }
+}
+

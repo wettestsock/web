@@ -1,0 +1,81 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(6, 11, 47);
+}
+
+@font-face {
+    font-family: "typewriter";
+    src: url(rough_typewriter.otf);
+}
+
+
+.inputs {
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1 {
+    font-family: typewriter;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 60px;
+}
+
+.text {
+    font-family: typewriter;
+    color: white;
+    font-size: 20px;
+}
+
+#calculate {
+    margin-top: 20px;
+    z-index: 99;
+    width: 300px;
+}
+
+.ui {
+    margin-top: 5%;
+}
+
+#calculate:hover {
+    cursor: pointer;
+}
+
+.number-input {
+    font-family: typewriter;
+    z-index: 98;
+    margin-left: 10px;
+    margin-right: 10px;
+    outline-style: solid;
+    background-color: rgb(6, 11, 47);
+    outline-color: rgb(255, 255, 255);
+    outline-width: 4px;
+    font-size: 30pt;
+    color: white;
+    width:100px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.output {
+    margin-top: 5%;
+}
+
+#wrong {
+    opacity: 0;
+    z-index: 1;
+    margin-top: 5%;
+}
+#answer {
+    z-index: 10;
+    font-size: 30pt;
+    margin-top: -20%;
+}
